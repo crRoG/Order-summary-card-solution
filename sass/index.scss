@@ -1,0 +1,124 @@
+$color-paleBlue: hsl(225, 100%, 94%);
+$color-brightBlue:  hsl(245, 75%, 52%);
+$color-veryPaleBlue:hsl(225, 100%, 98%);
+$color-desaturedBlue: hsl(224, 23%, 55%);
+$color-darkBlue: hsl(223, 47%, 23%);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    font-size: 1.6rem;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .card{
+        width: 35rem;
+        border-radius: 2rem;
+        background-color: white;
+        .girl{
+            width: 100%;
+            border-radius: 2rem 2rem 0 0;
+        }
+        .title{
+            color: $color-darkBlue;
+            font-size: 2.4rem;
+            font-weight: 800;
+            text-align: center;
+            margin-top: 3.2rem;
+        }
+        .text{
+            text-align: center;
+            color: $color-desaturedBlue;
+            padding: 2.4rem 5rem;
+            margin-bottom: 1rem;
+        }
+        .cta{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-evenly;
+            align-items: center;
+            background-color: $color-veryPaleBlue;
+            margin: 0 3.2rem;
+            border-radius: 1rem;
+            padding: 2rem 1rem;
+            .pricing{
+                .cta-text{
+                    font-weight: 700;
+                    color: $color-darkBlue;
+                }
+                .cta-pricing{
+                    color:hsl(224, 23%, 55%);
+                }
+            }
+            .cancel{
+                margin-left:1.6rem;
+                text-decoration: underline;
+                color: $color-brightBlue;
+                font-weight: 700;
+                &:hover{
+                    cursor: pointer;
+                    color: $color-brightBlue;
+                    opacity: 0.75;
+                }
+            }
+            }
+        .btn-pym{
+            background-color: $color-brightBlue;
+            color: white;
+            font-weight: 700;
+            text-align: center;
+            padding: 1.6rem;
+            margin: 2.4rem 3.2rem 0 3.2rem ;
+            border-radius: 1rem;
+            box-shadow: 0 1.6rem 1rem $color-paleBlue;
+            &:hover{
+                cursor: pointer;
+                background-color: $color-brightBlue;
+                opacity: 0.75;
+            }
+        }
+        .btn-cancel{
+            color: $color-desaturedBlue;
+            font-weight: 700;
+            text-align: center;
+            padding: 1.6rem;
+            margin: 1.6rem 3.2rem 3.2rem 3.2rem;
+            &:hover{
+                cursor: pointer;
+                color: $color-darkBlue;
+                opacity: 0.9;
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width:576px) {
+    .container{
+    background-color: $color-veryPaleBlue;
+    background-image: url(../img/pattern-background-desktop.svg);
+    background-size: cover;
+    }
+}
+
+@media screen and (max-width:575px){
+    .container{
+        background-color: $color-veryPaleBlue;
+        background-image: url(../img/pattern-background-mobile.svg);
+        background-size: cover;
+        }
+}

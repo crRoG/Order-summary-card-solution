@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  font-size: 1.6rem;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .card {
+  width: 35rem;
+  border-radius: 2rem;
+  background-color: white;
+}
+.container .card .girl {
+  width: 100%;
+  border-radius: 2rem 2rem 0 0;
+}
+.container .card .title {
+  color: hsl(223deg, 47%, 23%);
+  font-size: 2.4rem;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 3.2rem;
+}
+.container .card .text {
+  text-align: center;
+  color: hsl(224deg, 23%, 55%);
+  padding: 2.4rem 5rem;
+  margin-bottom: 1rem;
+}
+.container .card .cta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: hsl(225deg, 100%, 98%);
+  margin: 0 3.2rem;
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+}
+.container .card .cta .pricing .cta-text {
+  font-weight: 700;
+  color: hsl(223deg, 47%, 23%);
+}
+.container .card .cta .pricing .cta-pricing {
+  color: hsl(224deg, 23%, 55%);
+}
+.container .card .cta .cancel {
+  margin-left: 1.6rem;
+  text-decoration: underline;
+  color: hsl(245deg, 75%, 52%);
+  font-weight: 700;
+}
+.container .card .cta .cancel:hover {
+  cursor: pointer;
+  color: hsl(245deg, 75%, 52%);
+  opacity: 0.75;
+}
+.container .card .btn-pym {
+  background-color: hsl(245deg, 75%, 52%);
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  padding: 1.6rem;
+  margin: 2.4rem 3.2rem 0 3.2rem;
+  border-radius: 1rem;
+  box-shadow: 0 1.6rem 1rem hsl(225deg, 100%, 94%);
+}
+.container .card .btn-pym:hover {
+  cursor: pointer;
+  background-color: hsl(245deg, 75%, 52%);
+  opacity: 0.75;
+}
+.container .card .btn-cancel {
+  color: hsl(224deg, 23%, 55%);
+  font-weight: 700;
+  text-align: center;
+  padding: 1.6rem;
+  margin: 1.6rem 3.2rem 3.2rem 3.2rem;
+}
+.container .card .btn-cancel:hover {
+  cursor: pointer;
+  color: hsl(223deg, 47%, 23%);
+  opacity: 0.9;
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    background-color: hsl(225deg, 100%, 98%);
+    background-image: url(../img/pattern-background-desktop.svg);
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 575px) {
+  .container {
+    background-color: hsl(225deg, 100%, 98%);
+    background-image: url(../img/pattern-background-mobile.svg);
+    background-size: cover;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
